@@ -9,7 +9,8 @@
 ## fzf
 
 - install: https://github.com/junegunn/fzf
-- fuzzy search: `CTRL+r` to search in the bash history
+- fuzzy search cmd history: `CTRL+R` to search in the bash history
+- fuzzy search files: `fzf`
 
 ## sync bash history & unlimited history
 
