@@ -4,7 +4,6 @@
   - [Firewall setup with UFW](#firewall-setup-with-ufw)
   - [HTTPS setup](#https-setup)
   - [Cloud VSCode](#cloud-vscode)
-    - [Clang for CPP](#clang-for-cpp)
 
 ## Nginx setup
 
@@ -41,25 +40,4 @@ server {
       proxy_set_header Accept-Encoding gzip;
     }
 }
-```
-
-### Clang for CPP
-
-- install clang-11 (with lldb and lld):
-
-```bash
-# To retrieve the archive signature:
-wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
-# Fingerprint: 6084 F3CF 814B 57C1 CF12 EFD5 15CF 4D18 AF4F 7421
-
-# To install just clang, lld and lldb (11 release):
-apt-get install clang-11 lldb-11 lld-11
-```
-
-ref: https://apt.llvm.org/
-
-- compile single cpp file:
-
-```bash
-clang++ -Wall -std=c++17 test.cc -o test
 ```
